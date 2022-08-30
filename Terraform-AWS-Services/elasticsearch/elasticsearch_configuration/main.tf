@@ -1,15 +1,15 @@
-#terraform {
- # backend "s3" {
-  #  bucket = "terraform-state-devopsthehardway"
-   # key    = "eks-terraform-workernodes.tfstate"
-    #region = "ap-south-1"
-  #}
+terraform {
+  backend "s3" {
+    bucket = "terraform-state-devopsthehardway-amit"
+    key    = "eks-terraform-workernodes.tfstate"
+    region = "ap-south-1"
+  }
   required_providers {
     aws = {
       source = "hashicorp/aws"
     }
   }
-#}
+}
 
 
 # IAM Role for EKS to have access to the appropriate resources
