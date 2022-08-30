@@ -1,4 +1,4 @@
-terraform {
+#terraform {
  # backend "s3" {
   #  bucket = "terraform-state-devopsthehardway"
    # key    = "eks-terraform-workernodes.tfstate"
@@ -9,7 +9,7 @@ terraform {
       source = "hashicorp/aws"
     }
   }
-}
+#}
 
 
 # IAM Role for EKS to have access to the appropriate resources
