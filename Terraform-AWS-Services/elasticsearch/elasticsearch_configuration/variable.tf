@@ -22,3 +22,8 @@ variable "secret_key" {
   type    = string
   default = "Wvk6Pu80TbcyR47cP4qleo4uIeraIhZQS1hCxaFp"
 }
+
+variable "elasticsearch_password" {
+  type    = string
+  default = "Anish@13354"
+}
