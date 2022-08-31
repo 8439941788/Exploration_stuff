@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-state-devopsthehardway-amit"
+    bucket = "terraform-state-devopsthehardway-test"
     key    = "eks-terraform-workernodes.tfstate"
     region = "ap-south-1"
   }
