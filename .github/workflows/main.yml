@@ -33,4 +33,4 @@ jobs:
 
       - name: Terraform Destroy
         working-directory: Terraform-AWS-Services/elasticsearch/elasticsearch_configuration/
-        run: terraform destroy --auto-approve
+        run: terraform plan
