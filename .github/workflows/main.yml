@@ -31,10 +31,6 @@ jobs:
         working-directory: Terraform-AWS-Services/elasticsearch/elasticsearch_configuration/
         run: terraform fmt
 
-      - name: Terraform Plan
+      - name: Terraform Destroy
         working-directory: Terraform-AWS-Services/elasticsearch/elasticsearch_configuration/
-        run: terraform plan 
-
-      - name: Terraform Apply
-        working-directory: Terraform-AWS-Services/elasticsearch/elasticsearch_configuration/
-        run: terraform apply -auto-approve
+        run: terraform destroy --auto-approve
